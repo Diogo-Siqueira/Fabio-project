@@ -1,0 +1,197 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #14140F;
+}
+.container {
+  display: flex;
+  position: relative;
+}
+
+.navbar {
+  width: 85px;
+  background: #053D38;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  height: 100vh;
+  position: fixed;
+}
+
+.logo-container {
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+}
+
+.icons {
+  width: 12px;
+  height: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon {
+  margin-bottom: 10px;
+  width: 45px;
+  height: 45px;
+}
+
+.selected {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #34675C;
+  width: 85px;
+  height: 85px;
+}
+
+.content {
+  width: 650px;
+  height: 520px;
+  margin-left: 105px; /* Largura do navbar + margem */
+  margin-right: 20px;
+  padding: 20px;
+  background: #A3CCAB;
+  border-radius: 74px;
+  position: relative;
+  z-index: 0; /* Garante que o conteúdo esteja sobre a imagem */
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: flex-start;
+  gap: 25px;
+}
+.title {
+  color: black;
+  font-size: 51px;
+  font-family: 'Rowdies', sans-serif;
+  font-weight: 400;
+  z-index: 3; /* Agora o título estará sobre a imagem */
+}
+.subtitle {
+  display: flex;
+  align-items: flex-start;
+  font-family: 'Rosarivo', sans-serif;
+  font-size: 21px;
+  width: 438px;
+  align-self: baseline;
+}
+.button {
+  width: 141px;
+  height: 62px;
+  background-color: #F26800;
+  border-radius: 10px;
+  font-family: 'Rowdies', sans-serif;
+  color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px; /* Adicionei uma margem superior */
+  align-self: center;
+}
+.img_intro {
+  width: 624px;
+  height: 679px;
+  position: absolute;
+  top: -90px;
+  left: 675px; 
+  z-index: 2; /* A imagem deve estar abaixo do conteúdo */
+}
+.playlist-container {
+  max-width: 1200px;
+  margin: 50px auto;
+  display: flex;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.player-and-playlist {
+  flex: 1;
+  display: flex;
+}
+
+#player-container {
+  flex: 1;
+  padding: 20px;
+}
+
+#youtube-player {
+  width: 250px;
+  height: 315px;
+}
+
+#playlist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 300px; /* Largura da playlist */
+  background-color: #e6e6e6; /* Cor de fundo da playlist */
+  overflow-y: auto; /* Adiciona uma barra de rolagem à playlist se necessário */
+  padding: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+  cursor: pointer;
+  padding: 5px;
+  background-color: #fff; /* Cor de fundo de cada item da playlist */
+}
+
+li:hover {
+  background-color: #d9d9d9; /* Cor de fundo ao passar o mouse */
+}
+
+.description {
+  color: white;
+  display: flex;
+  flex-direction: column; /* Alterado para column para facilitar o alinhamento do texto */
+  align-items: center; /* Centralizar o texto */
+  font-family: 'Rowdies', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 20px; /* Adicione uma margem superior para separar da playlist */
+}
+
+.description_title {
+  text-decoration: underline; /* Adiciona sublinhado para o título da descrição */
+}
+
+.description_content {
+  font-family: 'Rowdies', sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+  text-align: center; /* Centralizar o texto */
+  width: 80%; /* Utiliza 80% da largura para melhor legibilidade */
+  margin-top: 10px; /* Adiciona uma margem superior para espaçamento */
+}
+.description{
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  font-family: 'Rowdies', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+.description_content{
+  font-family: 'Rowdies', sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+  display: flex;
+  align-items: flex-start ;
+  width: 490px;
+}
+
+
+#link{
+  text-decoration: none;
+}
